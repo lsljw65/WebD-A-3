@@ -23,4 +23,13 @@ $(function () {
     $(this).addClass("active");
     return false;
   });
+
+  //   팝업 기능 구현
+  $("#notic>li>a:first-child").click(function () {
+    $("#popup").show();
+    return false;
+  });
+  $(".pop-close").click(function () {
+    $("#popup").hide();
+  });
 });
